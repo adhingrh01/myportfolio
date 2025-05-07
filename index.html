@@ -6,8 +6,18 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Adhi Nugroho</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- SEO Metadata -->
+  <title>Adhi Nugroho | IT Support & Desainer Grafis</title>
+  <meta name="description" content="Portofolio Adhi Nugroho, IT Support dan Desainer Grafis dari Klaten, Jawa Tengah. Menyediakan jasa desain dan dukungan teknis komputer.">
+  <meta name="keywords" content="Adhi Nugroho, IT Support, Desain Grafis, Portofolio, TKJ, Klaten, Semarang, Illustrator, CorelDRAW, Canva">
+  <meta name="author" content="Adhi Nugroho" />
+
+  <!-- Open Graph (untuk preview di media sosial) -->
+  <meta property="og:title" content="Adhi Nugroho | IT Support & Desainer Grafis" />
+  <meta property="og:description" content="Lihat portofolio saya di bidang IT dan desain grafis." />
+  <meta property="og:image" content="https://portfolio.adhingrh.com/assets/img/portfolio/portfolio-1.jpg" />
+  <meta property="og:url" content="https://portfolio.adhingrh.com" />
+  <meta property="og:type" content="website" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -48,7 +58,7 @@
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="#hero">Adhi Nugroho</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://wa.me/+628994187392" class="whatsapps"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://wa.me/628994187392" class="whatsapps"><i class="bi bi-whatsapp"></i></a>
           <a href="https://www.linkedin.com/in/adhi-nugroho-676ngrh" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://www.instagram.com/adhingrh01/" class="instagram"><i class="bx bxl-instagram"></i></a>
         </div>
@@ -84,7 +94,7 @@
           <h2>About Me</h2>
           <p>Saya adalah lulusan Teknik Komputer dan jaringan.
             Memiliki pengalaman dalam membangun sebuah jaringan
-            komputer, melakukan perawatan jaringan komputer, dan memiliki memampuan dalam pembuatan design untuk kepentingan content creator.
+            komputer, melakukan perawatan jaringan komputer, dan memiliki kemampuan dalam pembuatan design untuk kepentingan content creator.
             mampu beradaptasi dalam lingkungan kerja
             dan mampu bekerja dalam tim maupun individu</p>
         </div>
@@ -104,7 +114,23 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Usia:</strong> <span>21</span></li>    
+                  <li><i class="bi bi-chevron-right"></i> <strong>Usia:</strong> <span id="age"></span></li>
+                  <script>
+                    // Tanggal lahir: 20 Desember 2000
+                    const birthDate = new Date(2002, 12, 27);
+                    const today = new Date();
+                    
+                    let age = today.getFullYear() - birthDate.getFullYear();
+                    const m = today.getMonth() - birthDate.getMonth();
+                    
+                    // Koreksi jika ulang tahun belum lewat tahun ini
+                    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                      age--;
+                    }
+                  
+                    document.getElementById("age").textContent = age;
+                  </script>
+
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>adhinugroho676@gmail.com</span></li>
                 </ul>
               </div>
